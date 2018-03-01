@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.0.M6'
+		springBootVersion = '2.0.0.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -19,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.example'
 version = '1.0.0-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = 1.9
 
 repositories {
 	mavenCentral()
@@ -29,7 +29,7 @@ repositories {
 
 
 ext {
-	springCloudVersion = 'Finchley.M4'
+	springCloudVersion = 'Finchley.BUILD-SNAPSHOT'
 }
 
 dependencies {
