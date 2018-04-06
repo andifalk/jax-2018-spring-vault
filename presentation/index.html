@@ -117,6 +117,7 @@
                         <img src="images/target_evolution.png" class="plain" width="70%">
                     </section>
                 </section>
+
                 <!-- Vault -->
 
                 <section>
@@ -156,6 +157,28 @@
                         <h4>Authorization (ACL)</h4>
                         <h4>Audit Logs</h4>
                         <h4>High Availability Mode (HA)</h4>
+                    </section>
+                    <section>
+                        <h2>Authorization (ACL)</h2>
+                        my-policy.json
+                        <pre><code class="javascript" data-trim>
+                            path "secret/*" {
+                              capabilities = [
+                                "create", "read", "update",
+                                "delete", "list"
+                              ]
+                            }
+
+                            path "secret/super-secret" {
+                              capabilities = ["deny"]
+                            }
+                        </code></pre>
+                        <pre><code class="bash" data-trim>
+                            $ vault write sys/policy/my-policy policy=@my-policy.json
+                        </code></pre>
+                        <pre><code class="bash" data-trim>
+                            $ vault token create -policy=my-policy ...
+                        </code></pre>
                     </section>
                     <section data-background="images/background_normal.jpg" data-background-size="75%">
                         <h2>Architecture I</h2>
@@ -260,16 +283,6 @@
                         <pre><code class="properties" data-trim>
                             spring.cloud.config.token = YourVaultToken
                         </code></pre>
-                    </section>
-                </section>
-
-                <!-- Cloud Foundry Vault Service Broker -->
-
-                <section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
-                        <img src="images/cloudfoundry_vault.png" class="plain" width="70%">
-                        <a href="https://github.com/hashicorp/vault-service-broker">https://github.com/hashicorp/vault-service-broker</a>
-                        <a href="https://github.com/pivotal-cf/spring-cloud-vault-connector">https://github.com/pivotal-cf/spring-cloud-vault-connector</a>
                     </section>
                 </section>
 
