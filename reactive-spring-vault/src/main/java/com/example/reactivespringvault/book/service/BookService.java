@@ -17,8 +17,8 @@ public class BookService {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
-    public Mono<Book> save(Book entity) {
-        return bookRepository.save(entity);
+    public Mono<Book> save(Book book) {
+        return bookRepository.save(book);
     }
 
     @PreAuthorize("hasAnyRole('ADMIN', 'USER')")

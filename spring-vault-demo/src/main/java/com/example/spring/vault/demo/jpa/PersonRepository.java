@@ -6,7 +6,5 @@ import java.util.UUID;
 
 public interface PersonRepository extends JpaRepository<Person,Long> {
 
-    Person findOneBySocialSecurityNumber(String socialSecurityNumber);
-
     Person findOneByIdentifier(UUID identifier);
 }

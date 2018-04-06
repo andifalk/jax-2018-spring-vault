@@ -52,14 +52,9 @@ public class PersonService {
         return personRepository.save(person);
     }
 
-
     public Person findByIdentifier(UUID identifier) {
         Person person = personRepository.findOneByIdentifier(identifier);
         return decryptSensibleData(person);
-    }
-
-    public Person findBySocialSecurityNumber(String socialSecurityNumber) {
-        return personRepository.findOneBySocialSecurityNumber(socialSecurityNumber);
     }
 
     private void encryptSensibleData(Person person) {

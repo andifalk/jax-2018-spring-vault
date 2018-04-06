@@ -19,11 +19,11 @@ public class DataInitializer implements CommandLineRunner {
     private static final Logger LOGGER = LoggerFactory.getLogger(DataInitializer.class);
 
     private final BookRepository bookRepository;
-    private final ReactiveVaultTemplate vaultTemplate;
+    private final ReactiveVaultTemplate reactiveVaultTemplate;
 
-    public DataInitializer(BookRepository bookRepository, ReactiveVaultTemplate vaultTemplate) {
+    public DataInitializer(BookRepository bookRepository, ReactiveVaultTemplate reactiveVaultTemplate) {
         this.bookRepository = bookRepository;
-        this.vaultTemplate = vaultTemplate;
+        this.reactiveVaultTemplate = reactiveVaultTemplate;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     private void readVaultData() {
-        Mono<VaultResponse> secretValue = vaultTemplate.read("/secret/reactive-spring-vault");
+        Mono<VaultResponse> secretValue = reactiveVaultTemplate.read("/secret/reactive-spring-vault");
         secretValue.subscribe(c -> {
             Map<String, Object> data = c.getData();
             LOGGER.info("Read data from vault {}", data);
