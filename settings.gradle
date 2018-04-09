@@ -1,0 +1,1 @@
+include 'reactive-spring-vault', 'spring-cloud-config-vault-client', 'spring-cloud-config-vault-server', 'spring-vault-demo', 'spring-vault-security'
