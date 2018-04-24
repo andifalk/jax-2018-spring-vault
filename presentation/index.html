@@ -255,19 +255,6 @@
                         </code></pre>
                     </section>
                     <section data-background="images/background_normal.jpg" data-background-size="75%">
-                        <h2>Rotate Database Credentials</h2>
-                        <h4>bootstrap.yml</h4>
-                        <pre><code class="yaml" data-trim>
-                            spring.cloud.vault:
-                                postgresql:
-                                    enabled: true
-                                    role: readonly
-                                    backend: postgresql
-                                    username-property: spring.datasource.username
-                                    password-property: spring.datasource.username
-                        </code></pre>
-                    </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
                         <img src="images/springcloudconfig_vault.png" class="plain">
                     </section>
                     <section data-background="images/background_normal.jpg" data-background-size="75%">
@@ -286,16 +273,6 @@
                     </section>
                 </section>
 
-                <!-- Future -->
-
-                <section data-background="images/background_normal.jpg" data-background-size="75%">
-                    <h2>Roadmap</h2>
-                    <h4>Spring (Cloud) Vault 2.0 M6</h4>
-                    <p>Spring 5 Support</p>
-                    <p><a href="https://docs.spring.io/spring-vault/docs/2.0.x/reference/html/#vault.repositories">Vault Repositories</a></p>
-                    <p>Reactive Support (Reactive Vault Template)</p>
-                </section>
-
                 <!-- Conclusion -->
 
                 <section data-background="images/background_normal.jpg" data-background-size="75%">
@@ -303,21 +280,37 @@
                     <img src="images/target_evolution.png" class="plain" width="75%">
                 </section>
 
+                <section>
+                    <h2>Alternatives</h2>
+                    <p><a href="https://azure.microsoft.com/de-de/services/key-vault">Azure Key Vault</a></p>
+                    <p><a href="https://pivotal.io/platform/pcf-components/credhub">CredHub (Pivotal)</a></p>
+                    <p>Hardware Security Modules (HSM)</p>
+                    <img src="images/cloud_hsm.png" class="plain" width="75%">
+                </section>
+
                 <section data-background="images/background_normal.jpg" data-background-size="75%">
                     <h2>But HSM...</h2>
-                    <p>...Not Cloud Friendly or...</p>
-                    <p>...Quite expensive (AWS ~ 18000 $/year)</p>
-                    <img src="images/cloud_hsm.png" class="plain" width="75%">
+                    <p>...not Cloud Friendly or...</p>
+                    <p>...quite expensive (AWS ~ 18000 $/year)</p>
+                    <p>...and not 100% secure (&ldquo;Confused Deputy&rdquo;)</p>
                 </section>
 
                 <!-- The end -->
 
                 <section data-background="images/background_normal.jpg" data-background-size="75%">
                     <h1>Q&A</h1>
-                    <p>http://www.novatec-gmbh.de</br>
+                    <p>
                     http://blog.novatec-gmbh.de</p>
                     <p>andreas.falk@novatec-gmbh.de</p>
-                    <p>@NT_AQE, @andifalk</p>
+                    <p>@andifalk</p>
+                    <img src="images/logo-spring-io.svg" class="plain" width="20%"><br>
+                    <small>@Spring I/O (Barcelona)<br>24.5.-25.5.2018<br><a href="https://2018.springio.net/sessions/hands-on-securing-applications-with-spring-security-50-workshop">Spring Security 5.0 Hands-On Workshop</a></small>
+                </section>
+                <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <h4>Besuchen Sie uns am NovaTec-Stand Nr. 31</h4>
+                    <img src="images/nt_booth.png" class="plain" width="40%">
+                    <h4>...und bei uns gewinnen Sie täglich!
+                        Management 3.0 (M30) oder Scrum Master Training (SMT)</h4>
                 </section>
                 <section data-background="images/background_normal.jpg" data-background-size="75%">
                     <h2>References</h2>
