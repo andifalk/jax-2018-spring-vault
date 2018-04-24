@@ -16,6 +16,6 @@ port of a spring cloud config server.
 ## Preparation
 
 1. Startup vault using `vault server -dev`
-2. Add root key `vault token-create -id=myroot` as defined in property _vault.token_ in `application.yml`
+2. Add root key `vault token create -id=myroot -ttl=60m` as defined in property _vault.token_ in `application.yml`
 3. Start the application via `./gradlew bootRun`
 

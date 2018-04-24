@@ -9,7 +9,7 @@ demo server on port `8888` and reads two configuration properties...
 ## Preparation
 
 1. Startup vault using `vault server -dev`
-2. Add root key `vault token-create -id=myroot` as defined in property _vault.token_ in `application.yml`
+2. Add root key `vault token create -id=myroot -ttl=60m` as defined in property _vault.token_ in `application.yml`
 3. Start the application via `./gradlew bootRun`
 
 After starting the application you can see the current values of the properties by accessing the following
@@ -25,17 +25,17 @@ To add or change the property of `mysecret` write the corresponding value to sec
 
 1. If not yet authenticated please authenticate using the root token:
 
-`vault auth 6b8cdd70-727a-7ea5-3e8d-e34d69e7ae8d` (replace the token with correct value)
+`vault login 6b8cdd70-727a-7ea5-3e8d-e34d69e7ae8d` (replace the token with correct value)
 
 2. Add a value for property `mysecret`
 
 You can either write this to the general application scoped path
 
-`vault write /secret/application mysecret=verysecret`
+`vault kv put /secret/application mysecret=verysecret`
 
 Or you can write it to the application specific path
 
-`vault write /secret/cfgclient mysecret=verysecret`
+`vault kv put /secret/cfgclient mysecret=verysecret`
 
 ## Refresh client
 

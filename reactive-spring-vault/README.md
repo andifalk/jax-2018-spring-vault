@@ -7,10 +7,12 @@ initializes an in-memory user store with secret password stored in vault.
 ## Preparation
 
 1. Startup vault using `vault server -dev`
-2. Add root key `vault token-create -id=myroot` as defined in property _vault.token_ in `application.yml`
-3. Add the secrets: `vault write secret/reactive-spring-vault userpass=password adminpass=secret`
-4. Start mongodb (for reactive data access) on localhost
-5. Start the application via `./gradlew bootRun`
+2. Add root key `vault token create -id=myroot -ttl=60m` as defined in property _vault.token_ in `application.yml`
+3. Remove default kv secret backend: `vault secrets disable /secret` (spring vault not campatible to vault 0.10)
+4. Add v1 kv secret backend: `vault secrets enable -path=secret kv-v1` (spring vault is not campatible to vault 0.10)
+5. Add the secrets: `vault kv put secret/reactive-spring-vault userpass=password adminpass=secret`
+6. Start mongodb (for reactive data access) on localhost
+7. Start the application via `./gradlew bootRun`
 
 ## Rest endpoints
 
