@@ -7,6 +7,10 @@ logging:
           config:
             client: trace
 management:
-  security:
-    enabled: false
-
+  endpoint:
+    refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
