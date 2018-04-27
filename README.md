@@ -2,6 +2,7 @@
 Präsentation und Demos zur JAX 2018 Session "Datenschutz in der Cloud mit  Spring Cloud Vault"
 
 [Präsentation (HTML)](https://andifalk.github.io/jax-2018-spring-vault/presentation/index.html)
+
 [Präsentation (PDF)](https://github.com/andifalk/jax-2018-spring-vault/raw/master/presentation/presentation.pdf)
 
 ## System-Requirements für die Demos
