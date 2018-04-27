@@ -44,14 +44,14 @@
                             <p><a style="color: white" href="https://github.com/andifalk/jax-2018-spring-vault">Präsentation und Demos: https://github.com/andifalk/jax-2018-spring-vault</a></p>
                         </div>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h3>Andreas Falk (@andifalk)</h3>
                         NovaTec Consulting GmbH (Stuttgart/Germany)<br>
                         <img class="plain" src="images/profile.png" width="68%">
                     </section>
                 </section>
                 <section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h3>EU Datenschutz Grundverordnung</h3>
                         <h3>(DSGVO / GDPR)</h3>
                         <p>Ab 25.Mai 2018 geltendes Recht!</p>
@@ -61,7 +61,7 @@
                             Quelle: <a href="http://senzing.com/gdpr">GDPR’s Missing Link Report (senzing.com/gdpr)</a>
                         </small>
                     </section>
-                    <section  data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section  >
                         <h3>Artikel 32</h3>
                         <h4>(Sicherheit der Verarbeitung)</h4>
                         <p>
@@ -76,12 +76,12 @@
                             Quelle: <a href="http://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE">eur-lex.europa.eu</a>
                         </small>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h3>A3: Sensitive Data Exposure</h3>
                         <img src="images/owasp_top_10_2017_changes.png" width="85%" class="plain">
                         <p><small><a href="https://github.com/OWASP/Top10">https://github.com/OWASP/Top10</a></small></p>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Typical Sensitive Data</h2>
                         <h4 class="fragment fade-up">Passwords</h4>
                         <h4 class="fragment fade-up">Service credentials (DB, Messaging, ...)</h4>
@@ -90,7 +90,7 @@
                         <h4 class="fragment fade-up">Credit card numbers</h4>
                         <h4 class="fragment fade-up">Personal data</h4>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>application.yaml</h2>
                         <h4>Database access credentials</h4>
                         <pre><code class="properties" data-trim>
@@ -101,26 +101,26 @@
                                     password: mysupersecretpassword
                         </code></pre>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h1>Key Management</h1>
                         <p>How to protect the key encrypting key?</p>
                         <img src="images/babuschka.jpg" class="plain" width="50%">
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h4>&ldquo;There is no alien technology <br>to mitigate all the risks&rdquo;</h4>
                         <p>Justin Smith (CSO @ Pivotal)</p>
                         <img src="images/cloud_native_key_management.png" class="plain" width="50%">
                         <p><small><a href="https://youtu.be/MvPIthr4kXA">https://youtu.be/MvPIthr4kXA</a></small></p>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <img src="images/angry_emoji.png" class="plain" width="30%">
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h1>Key Management</h1>
                         <p>Authentication</p>
                         <img src="images/auth_master_key.png" class="plain" width="70%">
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Data Security Evolution</h2>
                         <img src="images/target_evolution.png" class="plain" width="70%">
                     </section>
@@ -129,19 +129,19 @@
                 <!-- Vault -->
 
                 <section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Introduction</h2>
                         <img src="images/vault-black.png" class="plain" width="70%">
                         <a href="https://www.vaultproject.io/">https://www.vaultproject.io</a>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <img src="images/army.jpg" class="plain" width="40%">
                         <p>
                             &ldquo;A Security Swiss Army Knife&rdquo;
                         </p>
                         <p>Jeff Mitchell, Vault Lead, HashiCorp</p>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h3>A Tool for Managing Secrets like...</h3>
                         <ul>
                             <li>Tokens</li>
@@ -152,14 +152,14 @@
                             <li>DB credentials</li>
                         </ul>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Key Features</h2>
                         <h4>Secure Secret Storage</h4>
                         <h4>Dynamic Secrets</h4>
                         <h4>Data Encryption (AES cypher)</h4>
                         <h4>Leasing, Renewal & Revocation</h4>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Operational Features</h2>
                         <h4>Authentication</h4>
                         <h4>Authorization (ACL)</h4>
@@ -189,15 +189,15 @@
                             $ vault token create -policy=my-policy ...
                         </code></pre>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Architecture I</h2>
                         <img src="images/vault_architecture.png" class="plain" width="1500px">
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Architecture II</h2>
                         <img src="images/vault_architecture_logos.png" class="plain">
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Key Shares</h2>
                         <img src="images/key_shares.png" class="plain" width="80%">
                         <br>
@@ -213,7 +213,7 @@
 
                 <!-- Spring Vault -->
                 <section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Spring Vault</h2>
                         <img src="images/spring_vault.png" class="plain">
                         <p>
@@ -221,11 +221,11 @@
                                 https://projects.spring.io/spring-vault</a></small>
                         </p>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <img src="images/spring_vault_overview.png" class="plain">
                     </section>
 
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Encryption as a service</h2>
                         <img src="images/spring_vault_transit.png" class="plain">
                     </section>
@@ -233,7 +233,7 @@
 
                 <!-- Spring Cloud Vault -->
                 <section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Spring Cloud Vault</h2>
                         <img src="images/spring_cloud_vault.png" class="plain">
                         <p>
@@ -241,11 +241,11 @@
                                 https://cloud.spring.io/spring-cloud-vault</a></small>
                         </p>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <img src="images/springcloud_vault.png" class="plain">
                     </section>
 
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Secret vault mapping</h2>
                         <h4>bootstrap.properties</h4>
                         <pre><code class="properties" data-trim>
@@ -263,10 +263,10 @@
                             /secret/application/myprofile
                         </code></pre>
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <img src="images/springcloudconfig_vault.png" class="plain">
                     </section>
-                    <section data-background="images/background_normal.jpg" data-background-size="75%">
+                    <section>
                         <h2>Spring Cloud Config Vault Environment Repository</h2>
                         <h4>application.properties (Config Server)</h4>
                         <pre><code class="properties" data-trim>
@@ -292,36 +292,30 @@
                     <img src="images/cloud_hsm.png" class="plain" width="75%">
                 </section>
 
-                <section data-background="images/background_normal.jpg" data-background-size="75%">
+                <section>
                     <h2>But HSM...</h2>
                     <p>...not Cloud Friendly or...</p>
                     <p>...quite expensive (AWS ~ 18000 $/year)</p>
                     <p>...and not 100% secure (&ldquo;Confused Deputy&rdquo;)</p>
                 </section>
 
-                <section data-background="images/background_normal.jpg" data-background-size="75%">
+                <section>
                     <h2>No Silver Bullets!!</h2>
                     <img src="images/target_evolution.png" class="plain" width="75%">
                 </section>
 
                 <!-- The end -->
 
-                <section data-background="images/background_normal.jpg" data-background-size="75%">
+                <section>
                     <h1>Q&A</h1>
                     <p>
                     http://blog.novatec-gmbh.de</p>
                     <p>andreas.falk@novatec-gmbh.de</p>
                     <p>@andifalk</p>
                     <img src="images/logo-spring-io.svg" class="plain" width="20%"><br>
-                    <small>@Spring I/O (Barcelona)<br>24.5.-25.5.2018<br><a href="https://2018.springio.net/sessions/hands-on-securing-applications-with-spring-security-50-workshop">Spring Security 5.0 Hands-On Workshop</a></small>
+                    <small>@Spring I/O (Barcelona)<br>24.5.2018<br><a href="https://2018.springio.net/sessions/hands-on-securing-applications-with-spring-security-50-workshop">Spring Security 5.0 Hands-On Workshop</a></small>
                 </section>
-                <section data-background="images/background_normal.jpg" data-background-size="75%">
-                    <h4>Besuchen Sie uns am NovaTec-Stand Nr. 31</h4>
-                    <img src="images/nt_booth.png" class="plain" width="40%">
-                    <h4>...und bei uns gewinnen Sie täglich!
-                        Management 3.0 (M30) oder Scrum Master Training (SMT)</h4>
-                </section>
-                <section data-background="images/background_normal.jpg" data-background-size="75%">
+                <section>
                     <h2>References</h2>
                     <small>
                         <ul>
@@ -351,6 +345,10 @@
                 center: true,
                 pdfMaxPagesPerSlide: 1,
                 allottedTime: 45 * 60 * 1000, // 45 minutes
+                parallaxBackgroundImage: 'images/background_normal.jpg',
+                parallaxBackgroundSize: '76%',
+                parallaxBackgroundHorizontal: 0,
+                parallaxBackgroundVertical: 0,
 
                 transition: 'slide', // none/fade/slide/convex/concave/zoom
 				dependencies: [
